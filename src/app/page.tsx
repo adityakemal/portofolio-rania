@@ -125,11 +125,11 @@ export default function Page() {
                   My Journey in Data Analysis
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed  text-pretty">
-                  As a recent graduate of a data analysis course, I'm excited to
-                  share the projects I've worked. These projects represent my
-                  first steps into the world of data, showcasing my growing
-                  skills, creativity and enthusiasm for uncovering insights from
-                  information.
+                  As a recent graduate of a data analysis course, I&apos;m
+                  excited to share the projects I&apos;ve worked. These projects
+                  represent my first steps into the world of data, showcasing my
+                  growing skills, creativity and enthusiasm for uncovering
+                  insights from information.
                 </p>
               </div>
             </div>
