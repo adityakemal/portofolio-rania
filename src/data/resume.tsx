@@ -24,7 +24,7 @@ export const DATA = {
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/blog", icon: NotebookIcon, label: "Blog" },
+    // { href: "/blog", icon: NotebookIcon, label: "Blog" },
   ],
   contact: {
     email: "hello@example.com",
@@ -34,7 +34,6 @@ export const DATA = {
         name: "GitHub",
         url: "https://dub.sh/dillion-github",
         icon: Icons.github,
-
         navbar: true,
       },
       LinkedIn: {
@@ -44,25 +43,25 @@ export const DATA = {
 
         navbar: true,
       },
-      X: {
-        name: "X",
-        url: "https://dub.sh/dillion-twitter",
-        icon: Icons.x,
+      // X: {
+      //   name: "X",
+      //   url: "https://dub.sh/dillion-twitter",
+      //   icon: Icons.x,
 
-        navbar: true,
-      },
-      Youtube: {
-        name: "Youtube",
+      //   navbar: true,
+      // },
+      WhatsApp: {
+        name: "WhatsApp",
         url: "https://dub.sh/dillion-youtube",
-        icon: Icons.youtube,
+        icon: Icons.whatsapp,
         navbar: true,
       },
       email: {
         name: "Send Email",
-        url: "#",
+        url: "mailto:nisrinaraniam@gmail.com",
         icon: Icons.email,
 
-        navbar: false,
+        navbar: true,
       },
     },
   },
