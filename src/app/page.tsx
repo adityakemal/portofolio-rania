@@ -231,7 +231,7 @@ export default function Page() {
                 </Link>{" "}
                 with any questions or opportunities, and I&apos;ll do my best to
                 respond promptly. I&apos;m always open to learning more and
-                exploring potential collaborations."
+                exploring potential collaborations.
               </p>
             </div>
           </BlurFade>
