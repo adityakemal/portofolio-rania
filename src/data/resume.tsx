@@ -3,14 +3,14 @@ import { HomeIcon, NotebookIcon } from "lucide-react";
 
 export const DATA = {
   name: "Rania Nisrina Muazis",
-  initials: "Ran",
-  url: "https://dillion.io",
+  initials: "RNM",
+  url: "https://ranianisrina.vercel.app/",
   location: "Bandung",
   locationLink: "https://www.google.com/maps/place/bandung",
   description:
     "I am a data-focused Tax Auditor, currently working toward becoming a professional Data Analyst.",
   summary:
-    "In my role as a Tax Auditor within the government, I faced the challenge of analyzing a complex financial dataset from a coal company. Through simplification and conducting descriptive analytics using Microsoft Excel, I successfully uncovered tax evasion findings exceeding Rp 1 billion. Based on my experience in descriptive analytics and my ability to collaborate effectively with teams, I have developed strong analytical thinking skills. I possess proven expertise in analyzing tax reports using Microsoft Excel and have received recognition from supervisors for my capability in handling complex financial data. With the addition of my skills in SQL, Python, and Tableau, combined with my quick learning and adaptability, I am well-equipped to make a meaningful contribution as a Data Analyst. My track record of delivering impactful results, even as a new auditor, assures me that I can drive significant value for your company.",
+    "In my role as a Tax Auditor within the government, I faced the challenge of analyzing a complex financial datasets. Through simplification and conducting descriptive analytics using Microsoft Excel, I successfully uncovered tax evasion findings. Based on my experience in descriptive analytics and my ability to collaborate effectively with teams, I have developed strong analytical thinking skills. I possess proven expertise in analyzing tax reports using Microsoft Excel and have received recognition from supervisors for my capability in handling complex financial data. With the addition of my [technical skills](/#skills), combined with my quick learning and adaptability, I am well-equipped to make a meaningful contribution as a Data Analyst. My track record of delivering impactful results, even as a new auditor, assures me that I can drive significant value for your company.",
   // "At the end of 2022, I quit my job as a software engineer to go fulltime into building and scaling my own SaaS businesses. In the past, [I pursued a double degree in computer science and business](/#education), [interned at big tech companies in Silicon Valley](https://www.youtube.com/watch?v=d-LJ2e5qKdE), and [competed in over 21 hackathons for fun](/#hackathons). I also had the pleasure of being a part of the first ever in-person cohort of buildspace called [buildspace sf1](https://buildspace.so/sf1).",
   avatarUrl: "/me.jpeg",
   skills: [
@@ -28,17 +28,17 @@ export const DATA = {
   ],
   contact: {
     email: "hello@example.com",
-    tel: "+123456789",
+    tel: "+6282119926262",
     social: {
-      GitHub: {
-        name: "GitHub",
-        url: "https://dub.sh/dillion-github",
-        icon: Icons.github,
-        navbar: true,
-      },
+      // GitHub: {
+      //   name: "GitHub",
+      //   url: "https://dub.sh/dillion-github",
+      //   icon: Icons.github,
+      //   navbar: true,
+      // },
       LinkedIn: {
         name: "LinkedIn",
-        url: "https://dub.sh/dillion-linkedin",
+        url: "http://linkedin.com/in/rania-nisrina-88883a201",
         icon: Icons.linkedin,
 
         navbar: true,
@@ -52,7 +52,7 @@ export const DATA = {
       // },
       WhatsApp: {
         name: "WhatsApp",
-        url: "https://dub.sh/dillion-youtube",
+        url: "https://wa.me/6282119926262?text=I'm%20interested%20in%20your%20portofolio%20for%20hiring",
         icon: Icons.whatsapp,
         navbar: true,
       },
@@ -124,7 +124,7 @@ export const DATA = {
       href: "https://revou.co/",
       degree: "Full Stack Data Analyst",
       logoUrl: "/revou.svg",
-      start: "May 2023",
+      start: "May 2024",
       end: "Sep 2024",
       description: `<li>Conducted A/B testing to analyze campaign effectiveness, proven by a sales increase of over 5%, resulting in avoided additional costs for new campaigns.</li>
 <li>Utilized K-Means Clustering for customer segmentation, optimizing overall campaign effectiveness by tailoring campaigns to 4 distinct customer clusters, resulting in increased sales growth.</li>
