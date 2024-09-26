@@ -1,6 +1,8 @@
+import CertificateGallery from "@/components/certificate-gallery";
 import { HackathonCard } from "@/components/hackathon-card";
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
+
 import { ProjectCard } from "@/components/project-card";
 import { ResumeCard } from "@/components/resume-card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
@@ -157,15 +159,36 @@ export default function Page() {
           </div>
         </div>
       </section>
-      {/* <iframe
-        src="https://docs.google.com/presentation/d/1fhECnBEU2-rJIWXzgbLY0q12B-uR2IHCy3V2OzGwI4Y/embed?start=false&loop=false&delayms=3000"
-        frameborder="0"
-        width="960"
-        height="569"
-        allowfullscreen="true"
-        mozallowfullscreen="true"
-        webkitallowfullscreen="true"
-      ></iframe> */}
+
+      <section id="certificates">
+        <div className="space-y-12 w-full py-12">
+          <BlurFade delay={BLUR_FADE_DELAY * 14}>
+            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+              <div className="space-y-2">
+                <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
+                  Certificates
+                </div>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-pretty">
+                  My Achievements and Qualifications
+                </h2>
+                <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed  text-pretty">
+                  As a recent graduate of a data analysis course, I&apos;m proud
+                  to present the certificates I&apos;ve earned. These
+                  certifications represent my dedication to developing skills
+                  and knowledge in the field of data analysis.
+                </p>
+              </div>
+            </div>
+          </BlurFade>
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto">
+            <CertificateGallery
+              blurFadeDelay={BLUR_FADE_DELAY * 14}
+              data={DATA?.certificates}
+            />
+          </div>
+        </div>
+      </section>
+
       {/* <section id="hackathons">
         <div className="space-y-12 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 13}>

@@ -9,8 +9,7 @@ export const DATA = {
   locationLink: "https://www.google.com/maps/place/bandung",
   description:
     "I am a data-focused Tax Auditor, currently working toward becoming a professional Data Analyst.",
-  summary:
-    "In my role as a Tax Auditor within the government, I faced the challenge of analyzing a complex financial datasets. Through simplification and conducting descriptive analytics using Microsoft Excel, I successfully uncovered tax evasion findings. Based on my experience in descriptive analytics and my ability to collaborate effectively with teams, I have developed strong analytical thinking skills. I possess proven expertise in analyzing tax reports using Microsoft Excel and have received recognition from supervisors for my capability in handling complex financial data. With the addition of my [technical skills](/#skills), combined with my quick learning and adaptability, I am well-equipped to make a meaningful contribution as a Data Analyst. My track record of delivering impactful results, even as a new auditor, assures me that I can drive significant value for your company.",
+  summary: `With experience as a [Tax Auditor] (Work Experience) in the government, I have developed strong analytical skills by handling complex financial data and uncovering significant insights, including identifying over Rp 1 billion in tax evasion. My dedication to thorough analysis and teamwork has been recognized by my supervisor, motivating me to further [develop my skills](/#certificates) in data analytics. After completing a [Data Analytics bootcamp](/#projects), I’ve gained hands-on experience in [key technical skills](/#skills). I am confident that my analytical mindset and adaptability will be valuable in a Data Analyst role, where I look forward to continuously learning and contributing to data-driven decision-making.`,
   // "At the end of 2022, I quit my job as a software engineer to go fulltime into building and scaling my own SaaS businesses. In the past, [I pursued a double degree in computer science and business](/#education), [interned at big tech companies in Silicon Valley](https://www.youtube.com/watch?v=d-LJ2e5qKdE), and [competed in over 21 hackathons for fun](/#hackathons). I also had the pleasure of being a part of the first ever in-person cohort of buildspace called [buildspace sf1](https://buildspace.so/sf1).",
   avatarUrl: "/me.jpeg",
   skills: [
@@ -306,68 +305,28 @@ export const DATA = {
     //   image: "",
     //   video: "https://cdn.magicui.design/bento-grid.mp4",
     // },
-    // {
-    //   title: "llm.report",
-    //   href: "https://llm.report",
-    //   dates: "April 2023 - September 2023",
-    //   active: true,
-    //   description:
-    //     "Developed an open-source logging and analytics platform for OpenAI: Log your ChatGPT API requests, analyze costs, and improve your prompts.",
-    //   technologies: [
-    //     "Next.js",
-    //     "Typescript",
-    //     "PostgreSQL",
-    //     "Prisma",
-    //     "TailwindCSS",
-    //     "Shadcn UI",
-    //     "Magic UI",
-    //     "Stripe",
-    //     "Cloudflare Workers",
-    //   ],
-    //   links: [
-    //     {
-    //       type: "Website",
-    //       href: "https://llm.report",
-    //       icon: <Icons.globe className="size-3" />,
-    //     },
-    //     {
-    //       type: "Source",
-    //       href: "https://github.com/dillionverma/llm.report",
-    //       icon: <Icons.github className="size-3" />,
-    //     },
-    //   ],
-    //   image: "",
-    //   video: "https://cdn.llm.report/openai-demo.mp4",
-    // },
-    // {
-    //   title: "Automatic Chat",
-    //   href: "https://automatic.chat",
-    //   dates: "April 2023 - March 2024",
-    //   active: true,
-    //   description:
-    //     "Developed an AI Customer Support Chatbot which automatically responds to customer support tickets using the latest GPT models.",
-    //   technologies: [
-    //     "Next.js",
-    //     "Typescript",
-    //     "PostgreSQL",
-    //     "Prisma",
-    //     "TailwindCSS",
-    //     "Shadcn UI",
-    //     "Magic UI",
-    //     "Stripe",
-    //     "Cloudflare Workers",
-    //   ],
-    //   links: [
-    //     {
-    //       type: "Website",
-    //       href: "https://automatic.chat",
-    //       icon: <Icons.globe className="size-3" />,
-    //     },
-    //   ],
-    //   image: "",
-    //   video:
-    //     "https://pub-83c5db439b40468498f97946200806f7.r2.dev/automatic-chat.mp4",
-    // },
+  ],
+  certificates: [
+    {
+      title: "fdsfsdf",
+      description: "dfsfsdfs",
+      img: "/certificates/kominfo.jpg",
+    },
+    {
+      title: "fdsfsdf",
+      description: "dfsfsdfs",
+      img: "/certificates/dqlab1.jpg",
+    },
+    {
+      title: "fdsfsdf",
+      description: "dfsfsdfs",
+      img: "/certificates/dqlab2.jpg",
+    },
+    {
+      title: "fdsfsdf",
+      description: "dfsfsdfs",
+      img: "/certificates/dqlab3.jpg",
+    },
   ],
   // hackathons: [
   //   {
