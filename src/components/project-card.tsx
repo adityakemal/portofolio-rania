@@ -13,7 +13,7 @@ import Link from "next/link";
 import Markdown from "react-markdown";
 import Modal from "./ui/modal";
 import { Suspense, useState } from "react";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, ArrowUpRight } from "lucide-react";
 
 interface Props {
   title: string;
@@ -147,7 +147,7 @@ export function ProjectCard({
                 <Link href={link?.href} key={idx} target="_blank">
                   <Badge key={idx} className="flex gap-2 px-2 py-1 text-[10px]">
                     {link.icon}
-                    {link.type}
+                    {link.type} <ArrowUpRight size={12} />
                   </Badge>
                 </Link>
               ))}

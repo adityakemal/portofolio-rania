@@ -218,19 +218,20 @@ export default function Page() {
                 Contact
               </div>
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                Get in Touch
+                Looking to connect?
               </h2>
               <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Want to chat? Just shoot me a dm{" "}
+                I&apos;d be happy to chat! Feel free to{" "}
                 <Link
                   href={DATA.contact.social.WhatsApp.url}
                   className="text-blue-500 hover:underline"
                   target="__blank"
                 >
-                  with a direct question on whatsapp
+                  reach out via WhatsApp
                 </Link>{" "}
-                and I&apos;ll respond whenever I can. I will ignore all
-                soliciting.
+                with any questions or opportunities, and I&apos;ll do my best to
+                respond promptly. I&apos;m always open to learning more and
+                exploring potential collaborations."
               </p>
             </div>
           </BlurFade>

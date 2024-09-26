@@ -170,9 +170,7 @@ export const Icons = {
   whatsapp: (props: IconProps) => (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      fill="#000000"
-      height="800px"
-      width="800px"
+      fill="currentColor"
       version="1.1"
       id="Layer_1"
       viewBox="0 0 308 308"

@@ -60,7 +60,7 @@ export const ResumeCard = ({
         <div className="flex-grow ml-4 items-center flex-col group">
           <CardHeader>
             <div className="flex items-center justify-between gap-x-2 text-base">
-              <h3 className="inline-flex items-center justify-center font-semibold leading-none text-xs sm:text-sm">
+              <h3 className="inline-flex items-center justify-between sm:justify-center w-full sm:w-auto font-semibold leading-none text-xs sm:text-sm text-pretty">
                 {title}
                 {badges && (
                   <span className="inline-flex gap-x-1">
@@ -75,14 +75,17 @@ export const ResumeCard = ({
                     ))}
                   </span>
                 )}
-                <ChevronRightIcon
+                <div
                   className={cn(
-                    "size-4 translate-x-0 transform opacity-0 transition-all duration-300 ease-out group-hover:translate-x-1 group-hover:opacity-100",
+                    "translate-x-0 size-4 transform opacity-1 sm:opacity-0 transition-all duration-300 ease-out group-hover:translate-x-1 group-hover:opacity-100 float-right ",
                     isExpanded ? "rotate-90" : "rotate-0"
                   )}
-                />
+                >
+                  <ChevronRightIcon className="size-4" />
+                </div>
               </h3>
-              <div className="text-xs sm:text-sm tabular-nums text-muted-foreground text-right">
+              {/* web show period  */}
+              <div className="text-[11px] hidden sm:block sm:text-sm tabular-nums text-muted-foreground text-right whitespace-nowrap ">
                 {period}
               </div>
             </div>
@@ -91,6 +94,10 @@ export const ResumeCard = ({
               {location && (
                 <div className="font-sans text-xs"> in {location}</div>
               )}
+            </div>
+            {/* mobile show period  */}
+            <div className="text-[11px] block sm:hidden sm:text-sm tabular-nums text-muted-foreground whitespace-nowrap ">
+              {period}
             </div>
           </CardHeader>
           {description && (
