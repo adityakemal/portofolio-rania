@@ -34,8 +34,28 @@ export default function Page() {
               />
             </div>
             <BlurFade delay={BLUR_FADE_DELAY}>
-              <Avatar className="size-28 border">
-                <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
+              <Avatar className="size-28  group  transition-all duration-1000 relative ">
+                {DATA.avatarUrl && DATA.avatarUrlCartoon ? (
+                  <>
+                    <AvatarImage
+                      alt={DATA.name}
+                      src={DATA.avatarUrl}
+                      className="transition-all duration-500 opacity-[1] group-hover:opacity-0 absolute inset-0 group-hover:scale-x-[-1] rounded-full"
+                    />
+                    <AvatarImage
+                      alt={DATA.name}
+                      src={DATA.avatarUrlCartoon}
+                      className="transition-all duration-500 opacity-0 group-hover:opacity-[1]  absolute inset-0 scale-x-[-1] group-hover:scale-x-[1] rounded-full"
+                    />
+                  </>
+                ) : (
+                  <AvatarImage
+                    alt={DATA.name}
+                    src={DATA.avatarUrl}
+                    className="transition-all duration-500  absolute inset-0 group-hover:scale-x-[-1] rounded-full"
+                  />
+                )}
+
                 <AvatarFallback>{DATA.initials}</AvatarFallback>
               </Avatar>
             </BlurFade>
