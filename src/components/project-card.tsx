@@ -8,12 +8,13 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
-import Image from "next/image";
+
 import Link from "next/link";
 import Markdown from "react-markdown";
-import Modal from "./ui/modal";
-import { Suspense, useState } from "react";
+
+import { useState } from "react";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
+import { Image } from "antd";
 
 interface Props {
   title: string;
@@ -56,25 +57,6 @@ export function ProjectCard({
 
   return (
     <>
-      <Suspense fallback="loading">
-        <Modal isOpen={isModalOpen} onClose={handleClose}>
-          {iframe && (
-            <iframe
-              className="w-full h-full absolute inset-0 p-0"
-              loading="lazy"
-              // style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
-              src={iframe}
-              onLoad={() => setLoading(false)}
-              // allowFullScreen="true"
-              // mozallowfullscreen="true"
-              // webkitallowfullscreen="true"
-              allowFullScreen
-              allow="fullscreen"
-            ></iframe>
-          )}
-          {loading && <p className="">Loading...</p>}
-        </Modal>
-      </Suspense>
       <Card
         className={
           "flex flex-col overflow-hidden border hover:shadow-lg transition-all duration-300 ease-out h-full"
@@ -94,19 +76,41 @@ export function ProjectCard({
           {image && (
             <>
               <Image
-                onClick={() => setIsModalOpen(true)}
+                className="w-full object-cover aspect-video hover:object-contain"
+                preview={{
+                  mask: (
+                    <div className="flex items-center gap-x-1 text-sm">
+                      Show Deck <ArrowRight size={14} />
+                    </div>
+                  ),
+                  destroyOnClose: true,
+                  onVisibleChange: (visible) => {
+                    if (visible === false) {
+                      setLoading(true);
+                    }
+                  },
+                  imageRender: () => (
+                    <>
+                      <iframe
+                        className={`w-full aspect-video max-w-[1080px] ${
+                          loading && "hidden"
+                        }`}
+                        loading="lazy"
+                        // style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                        src={iframe}
+                        onLoad={() => setLoading(false)}
+                        allow="fullscreen"
+                      />
+
+                      {loading && (
+                        <p className="!text-white text-xl">Loading...</p>
+                      )}
+                    </>
+                  ),
+                  toolbarRender: () => null,
+                }}
                 src={image}
-                alt={title}
-                width={500}
-                height={300}
-                className="h-40 w-full overflow-hidden object-cover object-top"
               />
-              <button
-                onClick={() => setIsModalOpen(true)}
-                className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white opacity-0 hover:opacity-100 transition-opacity"
-              >
-                Show Deck <ArrowRight size={16} className="ml-2" />
-              </button>
             </>
           )}
         </div>
