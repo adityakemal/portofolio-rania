@@ -314,6 +314,11 @@ export const DATA = {
       img: "/certificates/kominfo.jpg",
     },
     {
+      title: "python",
+      description: "desc1",
+      img: "/certificates/python.jpg",
+    },
+    {
       title: "fdsfsdf2",
       description: "desc2",
       img: "/certificates/dqlab1.jpg",
