@@ -7,7 +7,14 @@ import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { ChevronRightIcon } from "lucide-react";
 import Link from "next/link";
-import React from "react";
+import {
+  useParams,
+  usePathname,
+  useRouter,
+  useSearchParams,
+} from "next/navigation";
+
+import React, { useEffect } from "react";
 
 interface ResumeCardProps {
   logoUrl: string;

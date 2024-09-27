@@ -9,7 +9,7 @@ export const DATA = {
   locationLink: "https://www.google.com/maps/place/bandung",
   description:
     "I am a data-focused Tax Auditor, currently working toward becoming a professional Data Analyst.",
-  summary: `With experience as a [Tax Auditor] (Work Experience) in the government, I have developed strong analytical skills by handling complex financial data and uncovering significant insights, including identifying over Rp 1 billion in tax evasion. My dedication to thorough analysis and teamwork has been recognized by my supervisor, motivating me to further [develop my skills](/#certificates) in data analytics. After completing a [Data Analytics bootcamp](/#projects), I’ve gained hands-on experience in [key technical skills](/#skills). I am confident that my analytical mindset and adaptability will be valuable in a Data Analyst role, where I look forward to continuously learning and contributing to data-driven decision-making.`,
+  summary: `With experience as a [Tax Auditor](/#work) in the government, I have developed strong analytical skills by handling complex financial data and uncovering significant insights, including identifying over Rp 1 billion in tax evasion. My dedication to thorough analysis and teamwork has been recognized by my supervisor, motivating me to further [develop my skills](/#certificates) in data analytics. After completing a [Data Analytics bootcamp](/#projects), I’ve gained hands-on experience in [key technical skills](/#skills). I am confident that my analytical mindset and adaptability will be valuable in a Data Analyst role, where I look forward to continuously learning and contributing to data-driven decision-making.`,
   // "At the end of 2022, I quit my job as a software engineer to go fulltime into building and scaling my own SaaS businesses. In the past, [I pursued a double degree in computer science and business](/#education), [interned at big tech companies in Silicon Valley](https://www.youtube.com/watch?v=d-LJ2e5qKdE), and [competed in over 21 hackathons for fun](/#hackathons). I also had the pleasure of being a part of the first ever in-person cohort of buildspace called [buildspace sf1](https://buildspace.so/sf1).",
   avatarUrl: "/me.jpeg",
   skills: [
@@ -308,23 +308,23 @@ export const DATA = {
   ],
   certificates: [
     {
-      title: "fdsfsdf",
-      description: "dfsfsdfs",
+      title: "fdsfsdf1",
+      description: "desc1",
       img: "/certificates/kominfo.jpg",
     },
     {
-      title: "fdsfsdf",
-      description: "dfsfsdfs",
+      title: "fdsfsdf2",
+      description: "desc2",
       img: "/certificates/dqlab1.jpg",
     },
     {
-      title: "fdsfsdf",
-      description: "dfsfsdfs",
+      title: "fdsfsdf3",
+      description: "desc3",
       img: "/certificates/dqlab2.jpg",
     },
     {
-      title: "fdsfsdf",
-      description: "dfsfsdfs",
+      title: "fdsfsdf4",
+      description: "desc4",
       img: "/certificates/dqlab3.jpg",
     },
   ],
