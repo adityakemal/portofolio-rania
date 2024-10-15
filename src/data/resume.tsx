@@ -9,13 +9,17 @@ export const DATA = {
   locationLink: "https://www.google.com/maps/place/bandung",
   description:
     "I am a data-focused Tax Auditor, currently working toward becoming a professional Data Analyst.",
-  summary: `With experience as a [Tax Auditor](/#work) in the government, I have developed strong analytical skills by handling complex financial data and uncovering significant insights, including identifying over Rp 1 billion in tax evasion. My dedication to thorough analysis and teamwork has been recognized by my supervisor, motivating me to further [develop my skills](/#certificates) in data analytics. After completing a [Data Analytics bootcamp](/#projects), I’ve gained hands-on experience in [key technical skills](/#skills). I am confident that my analytical mindset and adaptability will be valuable in a Data Analyst role, where I look forward to continuously learning and contributing to data-driven decision-making.`,
-  // "At the end of 2022, I quit my job as a software engineer to go fulltime into building and scaling my own SaaS businesses. In the past, [I pursued a double degree in computer science and business](/#education), [interned at big tech companies in Silicon Valley](https://www.youtube.com/watch?v=d-LJ2e5qKdE), and [competed in over 21 hackathons for fun](/#hackathons). I also had the pleasure of being a part of the first ever in-person cohort of buildspace called [buildspace sf1](https://buildspace.so/sf1).",
+  summary: `I am passionate about turning complex numbers into meaningful insights. With a background in financial analysis and tax audits, I have gained my technical [skills](/#skills) by joining several [courses](/#certificates) related to data science and completing a data analytics [bootcamp](/#projects). I am a detail-oriented person who enjoys solving problems and finding patterns in data. Currently, I am transitioning into data analysis to continue making an impact through smarter decisions, and I am excited to bring my skills to new challenges.`,
   avatarUrl: "/me.jpeg",
   avatarUrlCartoon: "/ava.jpeg",
   skills: [
     "SQL",
     "Python",
+    "Pandas",
+    "Numpy",
+    "Matplotlib",
+    "Seaborn",
+    "Scikit-learn",
     "Tableau",
     "Statistic",
     "Spreadsheet",
@@ -76,9 +80,8 @@ export const DATA = {
       logoUrl: "/djp.png",
       start: "Oct 2021",
       end: "Dec 2022",
-      description: `<li>Analyzed tax reports and financial data, uncovering findings exceeding IDR 1 billion in tax evasion during a coal company audit by identifying ineligible costs included in tax calculations.</li>
-<li>Conducted an on-site investigation of an electronics store, uncovering approximately IDR 400 million in tax evasion by identifying non-reported revenue, resulting in significant recovery of government tax losses.</li>
-<li>Developed comprehensive audit recommendations that improved compliance by helping ensure accurate tax reporting among taxpayers.</li>`,
+      description: `<li>Conducted audits and uncovered significant tax discrepancies, improving compliance and recovering tax revenue.</li>
+	<li>Delivered comprehensive audit reports with actionable recommendations to enhance tax reporting accuracy.</li>`,
     },
     {
       company: "Directorate General of Taxes",
@@ -89,9 +92,8 @@ export const DATA = {
       logoUrl: "/djp.png",
       start: "Aug 2020",
       end: "Sep 2021",
-      description: `<li>Prepared daily summaries of incoming letters that reduced the review process to a one-page table highlighting key details and prioritizing urgent correspondence for the head of office which improved response time by 25%, contributing to more efficient overall organizational feedback loops.</li>
-<li>Managed phone communications and scheduling meetings, enhancing office efficiency and ensuring timely follow-up on critical issues.</li>
-<li>Assisted in organizing office events that improved team cohesion and morale, leading to an increased collaborative environment. </li>`,
+      description: `<li>Streamlined correspondence and communication processes, enhancing office efficiency.</li>
+<li>Assisted in event planning and improved follow-ups on key tasks.</li>`,
     },
     {
       company: "Directorate General of Taxes",
@@ -102,8 +104,8 @@ export const DATA = {
       logoUrl: "/djp.png",
       start: "Dec 2017",
       end: "Jul 2020",
-      description: `<li>Created and visualized Tax Payer segmentation in Microsoft Excel, providing key insights on regional Tax Payer distribution, which led to more precise audit planning and increased audit effectiveness.</li>
-<li>Compiled and maintained accurate records of taxpayer compliance, identifying trends that informed strategic decision-making within the audit division.</li>`,
+      description: `<li>Analyzed and prepared performance reports to aid in decision-making and resource allocation.</li>
+<li>Developed taxpayer segmentation reports to optimize audit planning.</li>`,
     },
     // {
     //   company: "Mitre Media",
@@ -122,22 +124,22 @@ export const DATA = {
     {
       school: "RevoU",
       href: "https://revou.co/",
-      degree: "Full Stack Data Analyst",
+      degree: "Full Stack Data Analyst (Score: 96.97/100.00)",
       logoUrl: "/revou.svg",
       start: "May 2024",
       end: "Sep 2024",
-      description: `<li>Conducted A/B testing to analyze campaign effectiveness, proven by a sales increase of over 5%, resulting in avoided additional costs for new campaigns.</li>
-<li>Utilized K-Means Clustering for customer segmentation, optimizing overall campaign effectiveness by tailoring campaigns to 4 distinct customer clusters, resulting in increased sales growth.</li>
-<li>Developed a Tableau dashboard to visualize insights from analysis, delivering actionable recommendations through clear visuals, resulting in a more efficient decision-making process for stakeholders.</li>`,
+      description: `
+      Learned about business understanding, statistics in spreadsheets (including correlation, A/B testing, and linear regression),
+customer segmentation (such as RFM and K-Means clustering), dashboards, and data communication.`,
     },
     {
       school: "Politeknik Keuangan Negara STAN",
       href: "https://pknstan.ac.id/",
-      degree: "Diploma in Accounting (A.md,Ak.)",
+      degree: "Diploma in Accounting (GPA: 3.60/4.00)",
       logoUrl: "/stan.jpeg",
       start: "Apr 2014",
       end: "Oct 2017",
-      description: `GPA: 3.60<br>
+      description: `
       Data Analyst related subjects: 
       <li>Statistics (A-)</li>
       <li>Computer (A-)</li>
@@ -309,29 +311,40 @@ export const DATA = {
   ],
   certificates: [
     {
-      title: "fdsfsdf1",
+      title: "revou",
+      description: "desc1",
+      img: "/certificates/revouCer.pdf",
+      type: "pdf" as "image" | "pdf",
+    },
+    {
+      title: "kominfo",
       description: "desc1",
       img: "/certificates/kominfo.jpg",
+      type: "image" as "image" | "pdf",
     },
     {
       title: "python",
       description: "desc1",
       img: "/certificates/python.jpg",
+      type: "image" as "image" | "pdf",
     },
     {
       title: "fdsfsdf2",
       description: "desc2",
       img: "/certificates/dqlab1.jpg",
+      type: "image" as "image" | "pdf",
     },
     {
       title: "fdsfsdf3",
       description: "desc3",
       img: "/certificates/dqlab2.jpg",
+      type: "image" as "image" | "pdf",
     },
     {
       title: "fdsfsdf4",
       description: "desc4",
       img: "/certificates/dqlab3.jpg",
+      type: "image" as "image" | "pdf",
     },
   ],
   // hackathons: [
