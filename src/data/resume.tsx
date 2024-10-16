@@ -315,6 +315,7 @@ customer segmentation (such as RFM and K-Means clustering), dashboards, and data
       description: "desc1",
       img: "/certificates/revouCer.pdf",
       type: "pdf" as "image" | "pdf",
+      pdfThumb: "/certificates/revouThumb.png",
     },
     {
       title: "kominfo",
