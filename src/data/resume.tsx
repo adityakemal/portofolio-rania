@@ -16,6 +16,7 @@ export const DATA = {
     "SQL",
     "Python",
     "Pandas",
+    "Microsoft Power BI",
     "Numpy",
     "Matplotlib",
     "Seaborn",
@@ -150,6 +151,51 @@ customer segmentation (such as RFM and K-Means clustering), dashboards, and data
   ],
   projects: [
     {
+      title: "B2B Marketplace Google Analytics Dashboard",
+      href: "",
+      iframe:
+        "https://www.canva.com/design/DAGZbUvQ3kc/pAJK5Gb8T2mGoQCmFdTtOg/view?embed",
+      dates: "",
+      active: true,
+      description:
+        "Built a Power BI dashboard with Google Analytics data. Highlighted peak hours, top products, and funnel performance, recommending strategies to optimize marketing and boost conversions.",
+
+      // "With the release of the [OpenAI GPT Store](https://openai.com/blog/introducing-the-gpt-store), I decided to build a SaaS which allows users to collect email addresses from their GPT users. This is a great way to build an audience and monetize your GPT API usage.",
+      technologies: ["SQL", "Python", "Microsoft Power BI", "Google Collab"],
+      links: [
+        {
+          type: "Google Collab",
+          href: "https://colab.research.google.com/drive/1XQ-xoQXxD44ZayJqIvqbq-aMOb5kUB0S?authuser=0#scrollTo=mHdPqViiMmnI",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/project/b2b.jpeg",
+      video: "",
+    },
+    {
+      title: "Credit Application Funnel Analysis",
+      href: "",
+      iframe:
+        "https://www.canva.com/design/DAGXGKpEx9I/XusgIRcixXtcRFw0DUaAVA/view?embed",
+      dates: "",
+      active: true,
+      description:
+        "Analyzed fintech credit funnel using BigQuery, SQL, Python, and Tableau. Identified issues in document verification and credit checks, recommending automation and stronger checks to improve conversion rates and revenue. ",
+
+      // "With the release of the [OpenAI GPT Store](https://openai.com/blog/introducing-the-gpt-store), I decided to build a SaaS which allows users to collect email addresses from their GPT users. This is a great way to build an audience and monetize your GPT API usage.",
+      technologies: ["SQL", "Python", "Tableau", "Google Collab"],
+      links: [
+        {
+          type: "Google Collab",
+          href: "https://colab.research.google.com/drive/1ZtIi7oVIEbe3fbzeK_X8gRd0mS4c5Rwr#scrollTo=bpRc9r4IK1Ip",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/project/credit.jpeg",
+      video: "",
+    },
+
+    {
       title: "Personalized Campaign Strategies Analysis",
       href: "",
       iframe:
@@ -274,40 +320,6 @@ customer segmentation (such as RFM and K-Means clustering), dashboards, and data
       image: "/project/eda.jpeg",
       video: "",
     },
-    // {
-    //   title: "Magic UI",
-    //   iframe:
-    //     "https://www.canva.com/design/DAGPxJBwZQg/cmoC2C9Q3n5uwTmuvblttA/view?embed",
-    //   href: "https://magicui.design",
-    //   dates: "June 2023 - Present",
-    //   active: true,
-    //   description:
-    //     "Designed, developed and sold animated UI components for developers.",
-    //   technologies: [
-    //     "Next.js",
-    //     "Typescript",
-    //     "PostgreSQL",
-    //     "Prisma",
-    //     "TailwindCSS",
-    //     "Stripe",
-    //     "Shadcn UI",
-    //     "Magic UI",
-    //   ],
-    //   links: [
-    //     {
-    //       type: "Website",
-    //       href: "https://magicui.design",
-    //       icon: <Icons.globe className="size-3" />,
-    //     },
-    //     {
-    //       type: "Source",
-    //       href: "https://github.com/magicuidesign/magicui",
-    //       icon: <Icons.github className="size-3" />,
-    //     },
-    //   ],
-    //   image: "",
-    //   video: "https://cdn.magicui.design/bento-grid.mp4",
-    // },
   ],
   certificates: [
     {
