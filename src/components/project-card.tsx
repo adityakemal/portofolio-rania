@@ -59,8 +59,7 @@ export function ProjectCard({
     <Card
       className={
         "flex flex-col overflow-hidden border hover:shadow-lg transition-all duration-300 ease-out h-full"
-      }
-    >
+      }>
       <div className={cn("relative block cursor-pointer", className)}>
         {video && (
           <video
@@ -78,7 +77,16 @@ export function ProjectCard({
             preview={{
               mask: (
                 <div className="flex items-center gap-x-1 text-sm">
-                  Show Deck <ArrowRight size={14} />
+                  {iframe && (
+                    <>
+                      Show Deck <ArrowRight size={14} />
+                    </>
+                  )}
+                  {!iframe && (
+                    <>
+                      Show Image <ArrowRight size={14} />
+                    </>
+                  )}
                 </div>
               ),
               destroyOnClose: true,
@@ -87,24 +95,28 @@ export function ProjectCard({
                   setLoading(true);
                 }
               },
-              imageRender: () => (
-                <>
-                  <iframe
-                    className={`w-full aspect-video max-w-[1080px] ${
-                      loading && "hidden"
-                    }`}
-                    // loading="lazy"
-                    // style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
-                    src={iframe}
-                    onLoad={() => setLoading(false)}
-                    allow="fullscreen"
-                  />
+              imageRender: iframe
+                ? () => (
+                    <>
+                      {iframe && (
+                        <iframe
+                          className={`w-full aspect-video max-w-[1080px] ${
+                            loading && "hidden"
+                          }`}
+                          // loading="lazy"
+                          // style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                          src={iframe}
+                          onLoad={() => setLoading(false)}
+                          allow="fullscreen"
+                        />
+                      )}
 
-                  {loading && (
-                    <p className="!text-white text-base ">Loading...</p>
-                  )}
-                </>
-              ),
+                      {loading && (
+                        <p className="!text-white text-base ">Loading...</p>
+                      )}
+                    </>
+                  )
+                : (undefined as any),
               toolbarRender: () => null,
             }}
             src={image}
@@ -130,8 +142,7 @@ export function ProjectCard({
               <Badge
                 className="px-1 py-0 text-[10px]"
                 variant="secondary"
-                key={tag}
-              >
+                key={tag}>
                 {tag}
               </Badge>
             ))}
